@@ -37,7 +37,7 @@ public abstract class OwnerNameTagRendering {
         PetOwnerConfig config = AutoConfig.getConfigHolder(PetOwnerConfig.class).getConfig();
         if (!config.nametag) return;
 
-        if (dispatcher.targetedEntity != entity) return;
+        // if (dispatcher.targetedEntity != entity) return;
 
         List<UUID> ownerIds = PetOwnerClient.getOwnerIds(entity);
         if (ownerIds.isEmpty()) return;
